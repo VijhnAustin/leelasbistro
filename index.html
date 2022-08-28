@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leela's Bistro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .menu {
+                display: none
+            }
+
+            .bgimg {
+                background-size:     cover;                      /* <------ */
+                background-repeat:   no-repeat;
+                background-position: center center;     
+                background-image: url('images/leela.jpg');
+                min-height: 90%;
+            }
+        </style>
+    </head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">HOME</a>
+            <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+            <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge w3-center">In honor of Mrs. Lila Vernon, MBE, National Hero of Belize, Master Kriol Chef</span>
+        </div
+        <div class="w3-display-topmiddle w3-center">
+            <span class="w3-display-topmiddle w3-center  w3-text-white w3-hide-small" style="font-size:100px "> <strong>Leela's Bistro</strong></span>
+            <span class="w3-display-topmiddle w3-center  w3-text-white w3-hide-large w3-hide-medium" style="font-size:50px"><strong>Leela's Bistro</strong></span>
+            
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+            <span class="w3-tag w3-xlarge w3-center w3-green">"Ah wah know who seh kriol no gah no kulcha" - Lila Vernon</span>
+
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Entrees');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-small w3-mobile w3-hover-red">Entrees</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Sides');">
+                    <div class="w3-col s4 tablink w3-padding-small w3-mobile w3-hover-red">Sides</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                    <div class="w3-col s4 tablink w3-padding-small w3-mobile w3-hover-red">Drinks</div>
+                </a>
+            </div>
+
+            <div id="Entrees" class="w3-container menu w3-padding-32 w3-white">
+                <h1 class='w3-padding-32'><b>*All entrees come with two sides*</b>
+                <p class="w3-tag w3-red w3-round">Popular Dishes</p>
+                <h1><b>Fried or Steamed Garlic Herb Fish Fillet</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"> </p>
+                <hr>
+
+                <h1><b>Whole Snappers</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>King Fish Steaks</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+                
+                <h1><b>Shrimp</b> <span class="w3-tag w3-grey w3-round"></span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+               <hr> 
+
+                <h1><b>Grilled Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Fish Fingers</b> <span class="w3-tag w3-red w3-round"></span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                
+            </div>
+
+            <div id="Sides" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Plantain Chips</b> <span class="w3-tag w3-grey w3-round"></span> <span
+                        class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Fried to perfection.</p>
+                <hr>
+
+                <h1><b>Calaloo</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Prepared in traditional kriol style</p>
+                <hr>
+
+                <h1><b>Garden Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Fresh tomatoes, onions, lettuce, with house dressing</p>
+                <hr>
+
+                <h1><b>Steamed Veggies</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Mixed veggies steamed to perfection</p>
+                <hr>
+
+                 <h1><b>Coleslaw</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Homemade coleslaw prepared in traditional kriol style</p>
+                <hr>
+
+                <h1><b>Rice and Beans</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey">Prepared with fresh coconut milk to create a thick and hearty combination</p>
+                <hr>
+
+
+            </div>
+
+
+            <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Belikin Beer</b> <span class="w3-tag w3-grey w3-round"></span><span
+                        class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Belikin Stout</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Lighthouse</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Guiness</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Landshark</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Red Stripe</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Heineken</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Black Smirnoff</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                <hr>
+
+                <h1><b>Green Apple Smirnoff</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+                <p class="w3-text-grey"></p>
+                
+
+
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <p>The Leela Vernon Bistro was founded in honor of the late Leela Vernon in October of 2018 by the proprietor Mr. Franz Vernon and his sister Mrs. Julet Austin-Vernon. </p> 
+            <p>Mrs Lila Vernon's achievements include being declared a member of the British Empire (MBE) and a national hero of Belize for being a lifetime progenitor of kriol culture, cuisine, art, and tradition.</p>
+            <p><strong>The Chef?</strong> Mr. Franz Kevin Vernon Sr. himself, the son of Miss Leela Vernon<img src="images/franz.jpg" style="width:150px"
+                    class="w3-circle w3-right" alt="Chef"></p>
+            <p>We are proud of our cuisine and culture.</p>
+            <img src="images/boat.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+                alt="Restaurant">
+            <h1 class="w3-center w3-jumbo">Location</h1>
+
+            <div class="w3-row">
+                <div class="w3-center s6">
+                    <p> #6 Front Street, Punta Gorda, Belize </p>
+        
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="images/location.jpg"  style="width:100%;" id="myMap">
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p> Call us at 501-664-5520 or via Facebook messenger: <a href="https://www.facebook.com/profile.php?id=100005111656875" target="_blank">Julet Vernon-Austin</a> and <a href="https://www.facebook.com/profile.php?id=100002884081108" target="_blank">Franz Vernon Sr.</a> </p>
+            <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
+                understand your needs and we will cater the meals to satisfy the most discriminating palate.</p>
+            <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special, or just send us a message!
+            </p>
+            
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-48 w3-large">
+    <p>Made by Vijhn Austin</p>
+    <!-- Footer end. -->
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
