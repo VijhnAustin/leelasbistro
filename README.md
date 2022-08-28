@@ -1,1 +1,1 @@
-# leelasbistro
+The site was made with mostly CSS and some JS. The owners of Leela's Bistro are still deciding on a logo and theme, so for now, so we went with a text and color combination that would pop as much as possible 
